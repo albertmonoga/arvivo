@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@arvivo/arvivo-react": ["libs/arvivo-react/src/index.ts"],
       "@arvivo/arvivo-web": ["libs/arvivo-web/src/index.ts"],
       "@arvivo/components": ["libs/components/src/index.ts"]
     }
