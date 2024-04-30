@@ -32,9 +32,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git status
           git commit -m "Apply Prettier" || echo "No changes to commit"
           git status
-          git push origin HEAD:${{ github.head_ref }}
+          BRANCH_REF=${{ github.head_ref }} || echo ${{ github.ref }}
+          git push origin ${{ github.head_ref || github.ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
