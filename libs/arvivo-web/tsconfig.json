@@ -15,5 +15,6 @@
     {
       "path": "./tsconfig.lib.json"
     }
-  ]
+  ],
+  "composite":true,
 }
