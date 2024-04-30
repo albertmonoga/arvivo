@@ -22,13 +22,13 @@ const transformTokens = (parentKey, object) => {
   }, '');
 };
 
-if (!fs.existsSync('./styles')) {
-  fs.mkdirSync('./styles');
+if (!fs.existsSync('./src/styles')) {
+  fs.mkdirSync('./src/styles');
 }
 
 const data = `:root {\n\t${transformTokens(null, myDecisions).trim()}\n}`;
-if (!fs.existsSync('./styles/main.css')) {
-  fs.writeFile('./styles/main.css', data, 'utf8', (err) => {
+if (!fs.existsSync('./src/styles/main.css')) {
+  fs.writeFile('./src/styles/main.css', data, 'utf8', (err) => {
     if (err) {
       console.log(err);
     } else {
