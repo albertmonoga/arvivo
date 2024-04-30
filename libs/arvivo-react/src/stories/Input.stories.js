@@ -1,7 +1,7 @@
 import { Input } from '../atoms/input';
 
 export default {
-  title: 'Example/Input',
+  title: 'Molecules/Input',
   component: Input,
   tags: ['autodocs'],
 };
