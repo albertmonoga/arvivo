@@ -16,7 +16,7 @@
           "^default"
         ],
         "outputs": [
-          "{workspaceRoot}/libs/arvivo-web"
+          "{workspaceRoot}/libs/arvivo-web/src"
         ]
       }
     }
