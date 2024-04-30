@@ -4,21 +4,14 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
+  "dependencies": {},
   "devDependencies": {
     "@nx/eslint": "18.3.4",
     "@nx/eslint-plugin": "18.3.4",
     "@nx/js": "18.3.4",
-    "@nx/storybook": "^18.3.4",
     "@nx/vite": "18.3.4",
     "@nx/web": "18.3.4",
     "@nx/workspace": "18.3.4",
-    "@storybook/addon-essentials": "7.6.18",
-    "@storybook/addon-interactions": "^7.5.3",
-    "@storybook/core-server": "7.6.18",
-    "@storybook/jest": "^0.2.3",
-    "@storybook/react-vite": "7.6.18",
-    "@storybook/test-runner": "^0.13.0",
-    "@storybook/testing-library": "^0.2.2",
     "@swc-node/register": "~1.8.0",
     "@swc/core": "~1.3.85",
     "@swc/helpers": "~0.5.2",
@@ -30,15 +23,9 @@
     "eslint-config-prettier": "^9.0.0",
     "nx": "18.3.4",
     "prettier": "^2.6.2",
-    "storybook": "7.6.18",
-    "ts-node": "10.9.1",
     "typescript": "~5.4.2",
     "vite": "~5.0.0",
     "vite-plugin-dts": "~3.8.1",
     "vitest": "^1.3.1"
-  },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
   }
 }
