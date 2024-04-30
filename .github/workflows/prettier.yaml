@@ -27,20 +27,14 @@ jobs:
       - name: Show modified files
         run: git status
 
-      - name: Commit changes
+      - name: Commit and Push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          echo "Files staged for commit:"
           git status
           git commit -m "Apply Prettier" || echo "No changes to commit"
-          echo "Status after commit attempt:"
           git status
-          if [[ `git status --porcelain` ]]; then
-            git push origin HEAD:${{ github.head_ref }}
-          else
-            echo "No changes to commit"
-          fi
+          git push origin HEAD:${{ github.head_ref }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
