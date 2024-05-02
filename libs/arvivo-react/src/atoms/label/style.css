@@ -1,32 +1,32 @@
 .size-xs {
-    font-size: 0.75rem;
+    font-size: var(--fontSize-xs);
     line-height: 1rem;
 }
- 
+
 .size-sm {
-    font-size: 0.875rem;
+    font-size: var(--fontSize-sm);
     line-height: 1.25rem;
 }
- 
+
 .size-base {
-    font-size: 1rem;
+    font-size: var(--fontSize-base);
     line-height: 1.5rem;
 }
- 
+
 .size-lg {
-    font-size: 1.125rem;
+    font-size: var(--fontSize-lg);
     line-height: 1.75rem;
 }
 
 .size-xl {
-    font-size: 1.25rem;
+    font-size: var(--fontSize-xl);
     line-height: 1.75rem;
 }
- 
+
 .isBold {
     font-weight: bold;
 }
- 
+
 .isUpperCase {
     text-transform: uppercase;
 }
