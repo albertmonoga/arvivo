@@ -4,6 +4,22 @@
   "dependencies": {},
   "main": "./index.js",
   "module": "./index.mjs",
+  "type": "module",
   "typings": "./index.d.ts",
+  "scripts": {
+    "build-token": "node ./scripts/build-custom-properties.js"
+  },
+  "nx": {
+    "targets": {
+      "build-token": {
+        "inputs": [
+          "^default"
+        ],
+        "outputs": [
+          "{workspaceRoot}/libs/arvivo-web/src"
+        ]
+      }
+    }
+  },
   "private": true
 }
