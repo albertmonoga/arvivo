@@ -1,0 +1,39 @@
+.button {
+    border: 2px solid;
+    border-radius: var(--borderRadius-lg);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.type-primary {
+    background-color: var(--colors-brand-primary);
+    color: #fff;
+}
+
+.type-primary.isOutline {
+    color: var(--colors-brand-primary);
+    border: 2px solid var(--colors-brand-primary);
+    background: var(--colors-brand-onPrimary);
+}
+
+.type-secondary {
+    background-color: var(--colors-brand-secondary);
+    color: #fff;
+}
+
+.type-secondary.isOutline {
+    color: var(--colors-brand-secondary);
+    border: 2px solid var(--colors-brand-secondary);
+    background: var(--colors-brand-onSecondary);
+}
+
+.type-tertiary {
+    background-color: var(--colors-brand-tertiary);
+    color: #fff;
+}
+
+.type-tertiary.isOutline {
+    color: var(--colors-brand-tertiary);
+    border: 2px solid var(--colors-brand-tertiary);
+    background: var(--colors-brand-onTertiary);
+}
