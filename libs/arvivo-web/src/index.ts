@@ -1,1 +1,1 @@
-export * from './lib/arvivo-web';
+export * from './lib/arvivo-web'
