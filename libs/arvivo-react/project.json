@@ -1,0 +1,19 @@
+{
+  "name": "arvivo-react",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/arvivo-react/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/arvivo-react",
+        "main": "libs/arvivo-react/src/index.ts",
+        "tsConfig": "libs/arvivo-react/tsconfig.lib.json",
+        "assets": ["libs/arvivo-react/*.md"]
+      }
+    }
+  }
+}
