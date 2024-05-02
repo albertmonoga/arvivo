@@ -1,29 +1,18 @@
 {
   "extends": ["../../.eslintrc.json"],
-  "ignorePatterns": ["!**/*"],
+  "ignorePatterns": ["node_modules/*", "dist/*", "build/*", "**/*.eslintrc.json", "vite.config.ts", "**/*.json"],
+  "parserOptions": {
+    "project": "./libs/components/tsconfig.lib.json"
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
-      "rules": {}
-    },
-    {
-      "files": ["*.ts", "*.tsx"],
-      "rules": {}
-    },
-    {
-      "files": ["*.js", "*.jsx"],
-      "rules": {}
-    },
-    {
-      "files": ["*.json"],
-      "parser": "jsonc-eslint-parser",
+      "parser": "@typescript-eslint/parser",
       "rules": {
-        "@nx/dependency-checks": [
-          "error",
-          {
-            "ignoredFiles": ["{projectRoot}/vite.config.{js,ts,mjs,mts}"]
-          }
-        ]
+        "@typescript-eslint/naming-convention": ["error", {
+          "selector": "default",
+          "format": ["camelCase"]
+        }]
       }
     }
   ]
