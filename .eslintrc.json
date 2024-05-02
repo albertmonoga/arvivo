@@ -1,7 +1,15 @@
 {
   "root": true,
-  "ignorePatterns": ["**/*"],
-  "plugins": ["@nx"],
+  "extends": [
+    "airbnb-typescript/base",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "ignorePatterns": ["node_modules/*", "dist/*", "build/*"],
+  "plugins": ["@nx", "@typescript-eslint", "prettier", "import"],
+  "parserOptions": {
+    "project": "./tsconfig.base.json"
+  },
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
