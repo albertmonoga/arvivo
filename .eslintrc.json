@@ -1,9 +1,6 @@
 {
   "root": true,
-  "extends": [
-    "airbnb-typescript/base",
-    "plugin:prettier/recommended"
-  ],
+  "extends": ["airbnb-typescript/base", "plugin:prettier/recommended"],
   "parser": "@typescript-eslint/parser",
   "ignorePatterns": ["node_modules/*", "dist/*", "build/*"],
   "plugins": ["@nx", "@typescript-eslint", "prettier", "import"],
