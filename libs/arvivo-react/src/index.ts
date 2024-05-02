@@ -1,1 +1,1 @@
-export * from './lib/arvivo-react';
+export * from './lib/arvivo-react'

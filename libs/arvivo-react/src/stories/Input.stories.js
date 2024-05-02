@@ -1,10 +1,10 @@
-import { Input } from '../atoms/input';
+import { Input } from '../atoms/input'
 
 export default {
   title: 'Example/Input',
   component: Input,
   tags: ['autodocs'],
-};
+}
 
 export const Default = {
   args: {
@@ -12,7 +12,7 @@ export const Default = {
     type: 'text',
     style: {},
   },
-};
+}
 
 export const Password = {
   args: {
@@ -20,7 +20,7 @@ export const Password = {
     type: 'password',
     style: {},
   },
-};
+}
 
 export const Email = {
   args: {
@@ -28,7 +28,7 @@ export const Email = {
     type: 'email',
     style: {},
   },
-};
+}
 
 export const Number = {
   args: {
@@ -36,4 +36,4 @@ export const Number = {
     type: 'number',
     style: {},
   },
-};
+}
