@@ -2,7 +2,7 @@ name: Format Code
 
 on:
   push:
-    branches: [main, develop, feat/add-github-actions]
+    branches: [main, develop]
 
 jobs:
   prettier:
