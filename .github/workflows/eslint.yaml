@@ -12,7 +12,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # Asegúrate de usar la versión de Node.js que se adapte a tu proyecto
+          node-version: '14'
       - name: Install Dependencies
         run: npm install eslint  \
           @typescript-eslint/parser \
@@ -20,7 +20,6 @@ jobs:
           eslint-config-airbnb-typescript \
           eslint-config-prettier \
           eslint-plugin-import \
-          eslint-plugin-prettier \
+          eslint-plugin-prettier
       - name: Run Lint on All Projects
         run: npx nx run-many --target=lint --all
-        # npx nx run-many --target=lint --all ejecuta el linting en todos los proyectos definidos en workspace.json/angular.json
