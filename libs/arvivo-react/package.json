@@ -1,0 +1,12 @@
+{
+  "name": "@arvivo/arvivo-react",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "module": "./index.mjs",
+  "typings": "./index.d.ts",
+  "private": true,
+  "devDependencies": {
+    "@nx/storybook": "^18.3.4",
+    "classnames": "^2.5.1"
+  }
+}
