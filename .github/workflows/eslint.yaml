@@ -14,7 +14,13 @@ jobs:
         with:
           node-version: '14' # Asegúrate de usar la versión de Node.js que se adapte a tu proyecto
       - name: Install Dependencies
-        run: npm install
+        run: npm install eslint  \
+          @typescript-eslint/parser \
+          @typescript-eslint/eslint-plugin \
+          eslint-config-airbnb-typescript \
+          eslint-config-prettier \
+          eslint-plugin-import \
+          eslint-plugin-prettier \
       - name: Run Lint on All Projects
         run: npx nx run-many --target=lint --all
         # npx nx run-many --target=lint --all ejecuta el linting en todos los proyectos definidos en workspace.json/angular.json
