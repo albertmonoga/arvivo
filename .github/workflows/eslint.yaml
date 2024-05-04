@@ -15,9 +15,7 @@ jobs:
           node-version: '20'
       - name: Update npm
         run: npm install -g npm@latest
-      - name: Install Nx CLI
-        run: npm install -g nx
       - name: Install Dependencies
         run: npm install -g eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-airbnb-typescript eslint-config-prettier eslint-plugin-import eslint-plugin-prettier
       - name: Run Lint on All Projects
-        run: nx run-many --target=lint --all
+        run: npx nx run-many --target=lint --all
