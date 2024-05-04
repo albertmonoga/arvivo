@@ -18,6 +18,6 @@ jobs:
       - name: Install Nx CLI
         run: npm install -g nx
       - name: Install Dependencies
-        run: npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-airbnb-typescript eslint-config-prettier eslint-plugin-import eslint-plugin-prettier
+        run: npm install -g eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-airbnb-typescript eslint-config-prettier eslint-plugin-import eslint-plugin-prettier
       - name: Run Lint on All Projects
         run: nx run-many --target=lint --all
