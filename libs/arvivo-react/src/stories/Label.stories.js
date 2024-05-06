@@ -18,6 +18,7 @@ export const ExtraSmall = {
 
 export const Small = {
   args: {
+  args: {
     children: 'Label Small',
     size: 'sm',
     isBold: true,
@@ -26,6 +27,8 @@ export const Small = {
   },
 };
 
+export const Medium = {
+  args: {
 export const Medium = {
   args: {
     children: 'Label Medium',
@@ -38,6 +41,7 @@ export const Medium = {
 
 export const Large = {
   args: {
+  args: {
     children: 'Label Large',
     size: 'lg',
     isBold: true,
@@ -46,6 +50,7 @@ export const Large = {
   },
 };
 export const ExtraLarge = {
+  args: {
   args: {
     children: 'Label ExtraLarge',
     size: 'xl',

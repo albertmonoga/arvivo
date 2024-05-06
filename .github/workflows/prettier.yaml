@@ -1,0 +1,38 @@
+name: Format Code
+
+on:
+  push:
+    branches: [main, develop]
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14'
+
+      - name: Install Prettier
+        run: npm install --save-dev prettier
+
+      - name: Run Prettier
+        run: npx prettier --write .
+
+      - name: Show modified files
+        run: git status
+
+      - name: Commit and Push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "Apply Prettier" || echo "No changes to commit"
+          git status
+          BRANCH_REF=${{ github.head_ref }} || echo ${{ github.ref }}
+          git push origin ${{ github.head_ref || github.ref }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
