@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import type { StorybookConfig } from '@storybook/react-vite'
 
 const config: StorybookConfig = {
   stories: ['../src/**/*.@(mdx|stories.@(js|jsx|ts|tsx))'],
@@ -16,13 +16,13 @@ const config: StorybookConfig = {
       },
     },
   },
-
+  
   docs: {
     autodocs: true
   }
 };
 
-export default config;
+export default config
 
 // To customize your Vite configuration you can use the viteFinal field.
 // Check https://storybook.js.org/docs/react/builders/vite#configuration

@@ -1,3 +1,3 @@
 export function arvivoWeb(): string {
-  return 'arvivo-web';
+  return 'arvivo-web'
 }
