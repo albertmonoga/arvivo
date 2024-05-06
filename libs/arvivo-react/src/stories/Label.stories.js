@@ -1,10 +1,10 @@
-import { Label } from '../atoms/label';
+import { Label } from '../atoms/label'
 
 export default {
   title: 'Molecules/Label',
   component: Label,
   tags: ['autodocs'],
-};
+}
 
 export const ExtraSmall = {
   args: {
@@ -14,10 +14,9 @@ export const ExtraSmall = {
     isUpperCase: true,
     style: {},
   },
-};
+}
 
 export const Small = {
-  args: {
   args: {
     children: 'Label Small',
     size: 'sm',
@@ -25,10 +24,8 @@ export const Small = {
     isUpperCase: true,
     style: {},
   },
-};
+}
 
-export const Medium = {
-  args: {
 export const Medium = {
   args: {
     children: 'Label Medium',
@@ -37,10 +34,9 @@ export const Medium = {
     isUpperCase: true,
     style: {},
   },
-};
+}
 
 export const Large = {
-  args: {
   args: {
     children: 'Label Large',
     size: 'lg',
@@ -48,9 +44,8 @@ export const Large = {
     isUpperCase: true,
     style: {},
   },
-};
+}
 export const ExtraLarge = {
-  args: {
   args: {
     children: 'Label ExtraLarge',
     size: 'xl',
@@ -58,4 +53,4 @@ export const ExtraLarge = {
     isUpperCase: true,
     style: {},
   },
-};
+}
