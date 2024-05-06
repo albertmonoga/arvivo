@@ -4,7 +4,14 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["build-token", "preview", "build", "lint", "serve" ,"serve-static" ]
+        "cacheableOperations": [
+          "build-token",
+          "preview",
+          "build",
+          "lint",
+          "serve",
+          "serve-static"
+        ]
       }
     }
   },
