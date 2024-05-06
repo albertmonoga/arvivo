@@ -1,0 +1,12 @@
+.flicker {
+    border: 1px solid var(--colors-transparent);
+}
+
+.flicker:hover {
+    background-color: rgba(55, 92, 168, 0.2);
+    border: 1px solid var(--colors-brand-outline);
+    border-radius: 4px;
+    filter: brightness(70%);
+    transition-duration: 500ms;
+    cursor: pointer;
+}
