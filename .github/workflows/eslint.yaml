@@ -12,9 +12,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '14' # Asegúrate de usar la versión de Node.js que se adapte a tu proyecto
-      - name: Install Dependencies
-        run: npm install
+          node-version: '20'
+      - name: Install development dependencies
+        run: npm install --include=optional
       - name: Run Lint on All Projects
         run: npx nx run-many --target=lint --all
-        # npx nx run-many --target=lint --all ejecuta el linting en todos los proyectos definidos en workspace.json/angular.json
