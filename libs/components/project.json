@@ -14,6 +14,15 @@
         "tsConfig": "libs/components/tsconfig.lib.json",
         "assets": ["libs/components/*.md"]
       }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/arvivo-react/**/*.ts",
+          "libs/arvivo-react/**/*.tsx"
+        ]
+      }
     }
   }
 }
